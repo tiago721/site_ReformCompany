@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css\login.css">
+</head>
+<body>
+    <header id="cab_profile">
+        <nav>
+            <div class="cabecalho">
+                <a href="index.html">
+                    <img src="img/image1.png">
+                </a>
+            </div>
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a href="fornecedor.html">Cadastro Fornecedores</a>
+                <a href="consumidor.html">Cadastro Consumidor</a>
+                <a href="servicos.php">Serviços</a>
+                <a href="contato.html">Contato</a>
+                <a class="active" href="login.html">Login</a>
+            </div>
+            
+        </nav>
+    </header>
+
+    <section>
+        <div id="mainsigin">
+            <div>
+                <div>
+                    <div id="login_dv1">
+                        <h5 id="title1">FAÇA LOGIN NA SUA CONTA DA REFORM COMPANY<br></h5>
+                        <hr>
+                    </div>
+                    
+                    <form id="signup-form" action="login_consumidor.php" method="POST">                        
+                        <div class="form-label-group">
+                            <input type="email" class="form-control" id="email" required="" name="email"
+                                placeholder="E-MAIL">
+                        </div>
+                        <div class="form-label-group">
+                            <input type="password" class="form-control" id="password" required="" name="password"
+                                placeholder="SENHA">
+                        </div>
+                        <button type="submit">
+                            <span>LOGIN</span>
+                        </button>
+                    </form>
+                    <div id="opc">
+                        <div id="opc01">
+                            <p>ou </p><a href="">Esqueci a Senha</a>                            
+                        </div>
+                        <div id="opc02">
+                            <p>Não tem uma conta? <a href="">Inscreva-se</a> </p>                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+</body>
+</html>

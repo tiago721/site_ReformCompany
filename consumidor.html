@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cadastro Consumidor</title>
+    <link rel="stylesheet" type="text/css" href="css/consumidor.css">
+    <script>
+        function mascara_cpf(){
+            var cpf = document.getElementById('cpf')
+            if(cpf.value.length == 3 || cpf.value.length == 7){
+                cpf.value += "."
+            } else if(cpf.value.length == 11) {
+                cpf.value += "-"
+            }
+        }
+        function mascara_cep(){
+            var cep = document.getElementById('cep')
+            if(cep.value.length == 5){
+                cep.value += "-"
+            }
+        }
+        function mascara_telefone(mascara, input){
+            const vetMask = mascara.split("")
+            const numTelefone = input.value.replace(/\D/g,"")
+            const cursor = Number(input.selectionStart)
+            const tecla = (window.event) ? event.keyCode : event.which
+
+            for(let i=0; i<numTelefone.length; i++){
+                vetMask.splice(vetMask.indexOf("_"), 1, numTelefone[i])
+            }
+
+            input.value = vetMask.join("")
+
+            if(tecla != 37 && (cursor == 1 || cursor == 3 || cursor == 10)){
+                input.setSelectionRange(cursor+1, cursor+1)
+            } else {
+                input.setSelectionRange(cursor, cursor)
+            }            
+        }
+
+
+        
+    </script>
+</head>
+
+<body>
+    <header id="cab_profile">
+        <nav>
+            <div class="cabecalho">
+                <a href="index.html">
+                    <img src="img/image1.png">
+                </a>
+            </div>
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a href="fornecedor.html">Cadastro Fornecedores</a>
+                <a class="active" href="consumidor.html">Cadastro Consumidor</a>
+                <a href="servicos.php">Serviços</a>
+                <a href="contato.html">Contato</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <section style="width: 100%; height: 100%; background-color: #f5f5f5; border-top: solid 2px #9397b3;">
+        <div id="secDiv" style="width: 715px; height: 100%; border-radius: 10px; margin: auto;">
+            <br><br>
+            <div>
+                <div class="info">
+                    <div class="formulario_fornecedor">
+                        <fieldset style="border-radius: 10px;">
+                            <div id="title_form">
+                                <h1>Cadastro de Consumidor</h1>
+                            </div>
+                            <form id="form_cad" action="cadastro_consumidor.php" method="post">
+                                <div id="c_div_1">
+                                    <label for="nome">Nome Completo</label><br>
+                                    <input class="box_form" style="width: 280px;" type="text" name="nome" id="nome"
+                                        required><br>
+
+                                    <label for="cpf">CPF</label><br>
+                                    <input class="box_form2" type="text" name="cpf" id="cpf" autocomplete="off" maxlength="14" onkeyup="mascara_cpf()" required><br><br><br>
+
+                                    <label for="email">Email</label><br>
+                                    <input class="box_form2" style="width: 280px;" type="text" name="email" id="email"
+                                        required><br>
+
+                                    <label for="password1">Senha</label><br>
+                                    <input class="box_form2" style="width: 280px;" type="password" name="password1"
+                                        id="password1" required><br>
+
+                                    <label for="password2">Repita sua Senha</label><br>
+                                    <input class="box_form2" style="width: 280px;" type="password" name="password2"
+                                        id="password2" required><br>
+                                </div>
+
+                                <div id="c_div_2">
+                                    <label for="tel_1">Telefone 01</label><br>
+                                    <input class="box_form2" type="text" name="tel_01" id="tel_01" onkeyup="mascara_telefone('(__)_____-____',this)" required><br>
+
+                                    <label for="tel_02">Telefone 02</label><br>
+                                    <input class="box_form2" type="text" name="tel_02" id="tel_01" onkeyup="mascara_telefone('(__)_____-____',this)"><br>
+
+                                </div>
+                                <div id="c_div_3">
+                                    <label for="cep">CEP</label><br>
+                                    <input class="box_form2" type="text" name="cep" id="cep" maxlength="9" onkeyup="mascara_cep()" required><br>
+
+                                    <label for="num">Número</label><br>
+                                    <input class="box_form2" type="text" name="num" id="num" required><br>
+
+                                    <label for="comp">Complemento</label><br>
+                                    <input class="box_form2" type="text" name="comp" id="comp"><br><br>
+                                </div>
+                                
+
+                                <div id="c_div_4">
+                                    <label for="bairro">Bairro</label><br>
+                                    <input class="box_form2" style="width: 280px;" type="text" name="bairro"
+                                        id="bairro"required><br>
+
+                                    <label for="cidade">Cidade</label><br>
+                                    <input class="box_form2" style="width: 280px;" type="text" name="cidade"
+                                        id="cidade"required><br>
+
+                                    <label for="estado">Estado</label><br>
+                                    <input class="box_form2" type="text" name="estado" id="estado" maxlength="2" style="text-transform: uppercase;" required>
+                                </div>
+
+                             
+                                <form id="conexao" action="cadastro_consumidor.php" method="post">
+                                    <div id="c_div_5">
+                                        <button style="height: 50px; width: 100px; border: solid 1px #b8b6b6;"
+                                            type="submit">
+                                            <span>ENVIAR</span>
+                                        </button>
+                                </form>
+                                
+                    </div>
+                    </form>
+                    <div id="box_check">
+                        <br><br><br>
+                        <img src="img/form_check.png" alt="" srcset="">
+                    </div>
+
+
+
+
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+        </div>
+    </section>
+</body>
+
+<html>

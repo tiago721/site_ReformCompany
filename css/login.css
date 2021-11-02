@@ -1,0 +1,374 @@
+body{
+    margin: 0px;
+    width: 100%;  
+    height: 100%; 
+    background-color: #f5f5f5; 
+    
+}
+.cabecalho img{
+    width: 160px;
+    height: 160px;
+    margin-left: 80px;
+    margin-top: 00px;
+}
+
+.cabecalho{
+    height: 150px;
+    width: 100%;
+    background-image: url("../img/FundoCABE.jpeg");
+}
+.cabecalho h1{
+    margin-left: 200px;
+
+}
+
+  
+.inf img{
+    position: relative;
+    top: 40px;
+    left: 500px;        
+ }
+.inf fieldset{
+    background-color: #8dd2eb;
+    margin-left: 370px;
+    margin-top: 50px;
+    width: 400px;
+    height: 200px;
+   
+}
+.quadros fieldset{
+    float: left;
+    width: 400px;
+    height: 200px;
+
+}
+.FIM {
+    margin-left: 250px;
+    text-align: justify;
+    font-size: 30px;
+}
+.FIM img{
+    margin-left: 25px;
+    width: 700px;
+    height: 400px;
+}
+.texto h3{
+    color: black ;
+    
+}
+.servicos fieldset{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-left: 200px;
+    margin-top: 100px;
+
+}
+.login_rodape fieldset{
+    width: 400px;
+    height: 100px;
+    background-color: #5bacde;
+    margin-top: 1px;
+    margin-left: 370px;
+    border-radius: 150px;
+}
+.formulario_consumidor fieldset{
+    margin-left: 200px;
+    background-color: #8dd2eb;
+}
+
+.f1{
+    margin-left: 150px;
+    float: left;
+}
+.f2{
+    float: left;
+}
+.f4{
+    margin-top: 30px;
+    margin-left: 150px;
+    float: left;
+}
+.f5{
+    margin-top: 30px;
+    float: left;
+}
+.f6{
+    margin-top: 30px;
+}
+
+
+.formulario_fornecedor fieldset{
+    margin-left: 200px;
+    background-color: rgb(231, 231, 231);
+    border: 1px #b6b6b6 solid;
+}
+button{
+    font-family: Cooper Black;
+    font-size: 15px;
+    font-weight: 500;  
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(202, 245, 159);
+}
+.menu button{
+    background:#8dd2eb;
+    color: black; 
+    width: 145px;
+    height: 35px;
+ }
+.menu button:hover{
+    background: black;
+    color: #FFF;
+}
+.menu button:active{
+    position: relative;
+    top: 5px;
+    left: px;
+}
+.menu {
+    margin-left: 250px;
+}
+.inicial_inf img{
+    margin-left: 400px;
+}
+.inicial_inf h2{
+    
+    color: rgb(18, 15, 194);
+    font-size: 25px;
+    text-align: justify;
+    margin-left: 450px;
+    margin-top: -195px;   
+}
+.menu_login button{
+    background:#8dd2eb;
+    color:black;  
+    margin-left: 550px;
+}
+.menu_login button:hover{
+    background: black;
+    color: #FFF;
+}
+
+.FIM u{
+   margin-left: 270px; 
+}
+.f1 button:hover{        
+    background: black;
+    color: #FFF;
+}
+.f2 button:hover{        
+    background: black;
+    color: #FFF;
+}
+.f3 button:hover{        
+    background: black;
+    color: #FFF;
+}
+.f4 button:hover{        
+    background: black;
+    color: #FFF;
+}
+.f5 button:hover{        
+    background: black;
+    color: #FFF;
+}
+.f6 button:hover{        
+    background: black;
+    color: #FFF;
+}
+
+#form_cad label{
+    font-weight: bold;
+    line-height: 30px;
+}
+.box_form{
+    height: 25px;
+    width: 350px;
+    border: 0px;
+    border-radius: 10px;
+}
+.box_form2{
+    height: 25px;
+    width: 175px;
+    border: 0px;
+    border-radius: 10px;
+}
+.marginleft{    
+    margin-left: 400px;
+}
+#title_form{
+    text-align: center;
+}
+#f_div_1{    
+    width: 300px;
+    height: 180px;
+    float: left;
+}
+#f_div_2{
+    width: 300px;
+    height: 180px;
+    float: left;
+    margin-left: 50px;
+}
+#f_div_3{    
+    width: 400px;
+    height: 180px;
+    float: left;
+    margin-top: 200px;
+}
+#f_div_4{
+    width: 300px;
+    height: 180px;
+    float: right;
+    margin-top: 200px;
+}
+#f_div_5{    
+    float: right;
+    margin-top: 10px;
+}
+#box_check{
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    margin-left: 570px;
+}
+#box_check img{
+    width: 300px;
+    float: right;
+    margin: -650px -70px;
+}
+
+/***************************************************************************************/
+.navbar{
+    vertical-align: middle;
+    display: inline-block;
+    margin: 30px 30px 0px 20px;
+}
+.goleft{
+    float: left;
+}
+.notbolt{
+    font-weight: 400;
+}
+.italic{
+    font-style: italic; 
+}
+.textalign_right{
+    text-align: right;
+}
+.scroll{
+    overflow: auto;
+}
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    margin: -100px 0px 30px 300px; 
+
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 10px;
+    box-shadow: 2px 2px rgb(56, 58, 57);
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: rgb(221, 221, 221);
+    color: black;
+}
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+
+#mainsigin{
+    background-color: #e9e9e9;
+    border:solid black 1px;
+    width: 600px;
+    height: 480px;
+    border-radius: 5px;
+    margin-left: 33%;
+    margin-top: 40px;
+    color: black;
+    text-align: center;
+}
+#login_dv1{
+    width: 400px;
+    margin-left: 100px;
+    padding-top: 40px;
+    
+}
+#signup-form{
+    text-align: left;
+    float: left;
+    padding: 20px 60px 60px 60px;
+}
+#signup-form button{
+    width: 480px;
+    height: 70px;
+    border-radius: 5px;
+    border: 0px;
+    color: black;
+    background-color: white;    
+}
+#signup-form button:hover{
+    background-color: #2196F3;
+    
+}
+
+
+
+#opc02{
+    margin-top: -15px;
+}
+
+
+.form-label-group{
+    padding: 0px 0px 20px 0px;
+}
+.form-control{
+    height: 40px;
+    width: 470px;
+}
+.navbar{
+    vertical-align: middle;
+    display: inline-block;
+    margin: 30px 20px 0px 20px;
+}
+.goleft{
+    float: left;
+}
+.fix{
+    clear: both;
+}
+
+a:link, a:visited {
+	text-decoration: none
+	}
+a:hover {
+	text-decoration: underline; 
+    color: #f00    
+	}
+a:active {
+	text-decoration: none
+    }
+    
+section{
+    width: 100%; 
+    background-color: #f5f5f5; 
+    border-top: solid 2px #9397b3;
+}
